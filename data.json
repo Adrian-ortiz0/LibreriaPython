@@ -1,0 +1,44 @@
+{
+  "usuarios": {
+    "clientes": {
+      "2131231231": {
+        "Nombres": "qweqwe",
+        "Apellidos": "12312312",
+        "Direccion": "21312312312",
+        "Telefonos movil": 12312312312312,
+        "password": "543645657",
+        "libros": []
+      },
+      "23123": {
+        "Nombres": "erewrewr",
+        "Apellidos": "213123",
+        "Direccion": "213123",
+        "Telefonos movil": 12312312,
+        "password": "12312312",
+        "libros": []
+      },
+      "312312312312": {
+        "Nombres": "312312312",
+        "Apellidos": "4123123123",
+        "Direccion": "12312312212312",
+        "Telefonos movil": 12312312312312,
+        "password": "1231231231231",
+        "libros": []
+      },
+      "1002": {
+        "Nombres": "juancho",
+        "Apellidos": "asd",
+        "Direccion": "asd",
+        "Telefonos movil": 212,
+        "password": "125",
+        "libros": []
+      }
+    },
+    "admins": {
+      "adminmarino": {
+        "password": "JuanPapitoElMejor"
+      }
+    }
+  },
+  "libros": {}
+}
