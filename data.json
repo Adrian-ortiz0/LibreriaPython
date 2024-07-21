@@ -40,5 +40,206 @@
       }
     }
   },
-  "libros": {}
+  "libros": {
+    "01": {
+      "nombre": "It",
+      "fecha_publicacion": "1986",
+      "disponibilidad": true,
+      "cantidad": 4,
+      "categoria": "terror",
+      "autor": "Stephen King"
+    },
+    "02": {
+      "nombre": "The Shining",
+      "fecha_publicacion": "1977",
+      "disponibilidad": true,
+      "cantidad": 3,
+      "categoria": "terror",
+      "autor": "Stephen King"
+    },
+    "03": {
+      "nombre": "Dracula",
+      "fecha_publicacion": "1897",
+      "disponibilidad": true,
+      "cantidad": 5,
+      "categoria": "terror",
+      "autor": "Bram Stoker"
+    },
+    "04": {
+      "nombre": "Frankenstein",
+      "fecha_publicacion": "1818",
+      "disponibilidad": true,
+      "cantidad": 6,
+      "categoria": "terror",
+      "autor": "Mary Shelley"
+    },
+    "05": {
+      "nombre": "Pet Sematary",
+      "fecha_publicacion": "1983",
+      "disponibilidad": true,
+      "cantidad": 4,
+      "categoria": "terror",
+      "autor": "Stephen King"
+    },
+    "06": {
+      "nombre": "Harry Potter and the Sorcerer's Stone",
+      "fecha_publicacion": "1997",
+      "disponibilidad": true,
+      "cantidad": 10,
+      "categoria": "fantasía",
+      "autor": "J.K. Rowling"
+    },
+    "07": {
+      "nombre": "The Hobbit",
+      "fecha_publicacion": "1937",
+      "disponibilidad": true,
+      "cantidad": 7,
+      "categoria": "fantasía",
+      "autor": "J.R.R. Tolkien"
+    },
+    "08": {
+      "nombre": "The Name of the Wind",
+      "fecha_publicacion": "2007",
+      "disponibilidad": true,
+      "cantidad": 8,
+      "categoria": "fantasía",
+      "autor": "Patrick Rothfuss"
+    },
+    "09": {
+      "nombre": "A Game of Thrones",
+      "fecha_publicacion": "1996",
+      "disponibilidad": true,
+      "cantidad": 6,
+      "categoria": "fantasía",
+      "autor": "George R.R. Martin"
+    },
+    "10": {
+      "nombre": "Mistborn: The Final Empire",
+      "fecha_publicacion": "2006",
+      "disponibilidad": true,
+      "cantidad": 5,
+      "categoria": "fantasía",
+      "autor": "Brandon Sanderson"
+    },
+    "11": {
+      "nombre": "Pride and Prejudice",
+      "fecha_publicacion": "1813",
+      "disponibilidad": true,
+      "cantidad": 8,
+      "categoria": "romance",
+      "autor": "Jane Austen"
+    },
+    "12": {
+      "nombre": "Outlander",
+      "fecha_publicacion": "1991",
+      "disponibilidad": true,
+      "cantidad": 5,
+      "categoria": "romance",
+      "autor": "Diana Gabaldon"
+    },
+    "13": {
+      "nombre": "Me Before You",
+      "fecha_publicacion": "2012",
+      "disponibilidad": true,
+      "cantidad": 4,
+      "categoria": "romance",
+      "autor": "Jojo Moyes"
+    },
+    "14": {
+      "nombre": "The Notebook",
+      "fecha_publicacion": "1996",
+      "disponibilidad": true,
+      "cantidad": 6,
+      "categoria": "romance",
+      "autor": "Nicholas Sparks"
+    },
+    "15": {
+      "nombre": "Twilight",
+      "fecha_publicacion": "2005",
+      "disponibilidad": true,
+      "cantidad": 7,
+      "categoria": "romance",
+      "autor": "Stephenie Meyer"
+    },
+    "16": {
+      "nombre": "To Kill a Mockingbird",
+      "fecha_publicacion": "1960",
+      "disponibilidad": true,
+      "cantidad": 7,
+      "categoria": "novelas",
+      "autor": "Harper Lee"
+    },
+    "17": {
+      "nombre": "1984",
+      "fecha_publicacion": "1949",
+      "disponibilidad": true,
+      "cantidad": 6,
+      "categoria": "novelas",
+      "autor": "George Orwell"
+    },
+    "18": {
+      "nombre": "Moby-Dick",
+      "fecha_publicacion": "1851",
+      "disponibilidad": true,
+      "cantidad": 5,
+      "categoria": "novelas",
+      "autor": "Herman Melville"
+    },
+    "19": {
+      "nombre": "War and Peace",
+      "fecha_publicacion": "1869",
+      "disponibilidad": true,
+      "cantidad": 4,
+      "categoria": "novelas",
+      "autor": "Leo Tolstoy"
+    },
+    "20": {
+      "nombre": "The Catcher in the Rye",
+      "fecha_publicacion": "1951",
+      "disponibilidad": true,
+      "cantidad": 6,
+      "categoria": "novelas",
+      "autor": "J.D. Salinger"
+    },
+    "21": {
+      "nombre": "1984",
+      "fecha_publicacion": "1949",
+      "disponibilidad": true,
+      "cantidad": 5,
+      "categoria": "ficción",
+      "autor": "George Orwell"
+    },
+    "22": {
+      "nombre": "Brave New World",
+      "fecha_publicacion": "1932",
+      "disponibilidad": true,
+      "cantidad": 4,
+      "categoria": "ficción",
+      "autor": "Aldous Huxley"
+    },
+    "23": {
+      "nombre": "The Great Gatsby",
+      "fecha_publicacion": "1925",
+      "disponibilidad": true,
+      "cantidad": 6,
+      "categoria": "ficción",
+      "autor": "F. Scott Fitzgerald"
+    },
+    "24": {
+      "nombre": "The Road",
+      "fecha_publicacion": "2006",
+      "disponibilidad": true,
+      "cantidad": 3,
+      "categoria": "ficción",
+      "autor": "Cormac McCarthy"
+    },
+    "25": {
+      "nombre": "Catch-22",
+      "fecha_publicacion": "1961",
+      "disponibilidad": true,
+      "cantidad": 3,
+      "categoria": "ficción",
+      "autor": "Joseph Heller"
+    }
+  }
 }

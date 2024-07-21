@@ -1,7 +1,7 @@
 import json
 import time
 import os
-
+from datetime import datetime
 #guardar y leer la base de datos de la bilioteca
 
 def leer_datos_biblioteca():
@@ -42,6 +42,13 @@ def clear():
 def wait_for_keypress():
     print("Presiona cualquier tecla para continuar...")
     os.system('pause >nul')
+    
+def generadorID(data):
+    # Obtener el último ID usado desde los datos
+    ultimo_id = data.get("ultimo_id_libro", 0)
+    nuevo_id = ultimo_id + 1
+    data["ultimo_id_libro"] = nuevo_id
+    return nuevo_id
 
 #--------------------------------------------------------------------------
 
@@ -203,20 +210,21 @@ def main_admin_biblioteca():
         print("********************************************************")
         print("3. Agregar libro")
         print("4. Eliminar libro")
-        print("5. Mostrar todos los libros")
-        print("6. Mostrar libros por genero")
-        print("7. Mostar libros por autor")
+        print("5. Agregar copias")
+        print("6. Mostrar todos los libros")
+        print("7. Mostrar libros por genero")
+        print("8. Mostar libros por autor")
         
         print("********************************************************")
         print("                       RESERVA")
         print("********************************************************")
-        print("8. mostrar libros disponibles")
-        print("9. mostrar clientes con libros en uso")
-        print("10. Reservar libro manualmente")
-        print("11. Devolucion de libro")
+        print("9. mostrar libros disponibles")
+        print("10. mostrar clientes con libros en uso")
+        print("11. Reservar libro manualmente")
+        print("12. Devolucion de libro")
         
         print("***********************************************")
-        print("12. REGRESAR --> Menu principal")
+        print("13. REGRESAR --> Menu principal")
         print("***********************************************\n")
         try:
             opt=int(input("ingrese su opcion: "))
@@ -234,26 +242,29 @@ def main_admin_biblioteca():
                 eliminar_libro()
             elif opt==5:
                 clear()
-                mostrar_todos()
+                agregar_copias()
             elif opt==6:
                 clear()
-                mostrar_genero()
+                mostrar_todos()
             elif opt==7:
                 clear()
-                mostrar_autor()
+                mostrar_genero()
             elif opt==8:
                 clear()
-                mostrar_disponibles()
+                mostrar_autor()
             elif opt==9:
                 clear()
-                clientes_con_libros()
+                mostrar_disponibles()
             elif opt==10:
                 clear()
-                reservar_manualmente()
+                clientes_con_libros()
             elif opt==11:
                 clear()
-                devolver_libro()
+                reservar_manualmente()
             elif opt==12:
+                clear()
+                devolver_libro()
+            elif opt==13:
                 clear()
                 return
             else:
@@ -366,11 +377,118 @@ def eliminar_usuario():
             continue
     
 
-# def agregar_libro():
+def agregar_libro():
+        while True:      
+            data=leer_datos_biblioteca()
+            print("********************************************************")
+            print("                    Pagina de registro de libro")
+            print("********************************************************")
+            titulo = input("Ingrese el titulo: ")
+            autor = input("Ingrese el nombre del autor: ")
+            
+            if not any(libro for libro in data["libros"].values() if libro["Titulo"] == titulo and libro["Autor"] == autor):
+                categoria = input("Ingrese la categoria: ")
+                fecha_publi = input("Ingrese la fecha de publicación (YYYY-MM-DD): ")
+                try:
+                    datetime.strptime(fecha_publi, "%Y-%m-%d")
+                except ValueError:
+                    print("La fecha debe estar en el formato YYYY-MM-DD.")
+                    continue
+                
+                try:
+                    cantidad = int(input("Ingrese la cantidad: "))
+                except ValueError:
+                    print("La cantidad debe ser un número entero.")
+                    continue
+                id_libro = str(generadorID(data))  #genera id
+                data["libros"][id_libro] = {
+                    "Titulo": titulo,
+                    "Autor": autor,
+                    "Categoria": categoria,
+                    "Telefonos movil": fecha_publi,
+                    "Cantidad":cantidad,
+                    "Disponibilidad":True
+                }
+                print("***********************************************")
+                guardar_datos_biblioteca(data)
+                print(f"Registro del libro con ID:({id_libro}) fue guardado correctamente.")
+                time.sleep(2)
+                wait_for_keypress()
+                clear()
+                print("***********************************************")
+                return
+            else:
+                print("***********************************************")
+                print("Este libro ya se encuentra registrado.")
+                time.sleep(2)
+                clear()
+                print("***********************************************")
+                return
 
-# def eliminar_libro():
+def eliminar_libro():
+    while True:
+        data=leer_datos_biblioteca()
+        print("********************************************************")
+        print("                    Pagina de eliminacion de libro")
+        print("********************************************************")
+        try:
+            id_libro = input("Ingrese el ID del libro que desea eliminar: ")
+            if id_libro in data["libros"]:
+                libro = data["libros"][id_libro]
+                print(f"Libro encontrado: Titulo: {(libro["Titulo"])}, Autor: {(libro["Autor"])}, Cantidad: {(libro["Cantidad"])}")
 
-# def mostrar_todos():
+                eliminar_todo = input("Desea eliminar todas las unidades de este libro? (1. Si - 2. No) :")
+                if eliminar_todo == "1":
+                    data["libros"].pop(id_libro)
+                    print(f"El libro con ID{id_libro} fue eliminado correctamente.")
+                else:
+                    try:
+                        cantidad_a_eliminar = int(input("Ingrese la cantidad a eliminar: "))
+                        if cantidad_a_eliminar >= libro["Cantidad"]:
+                            data["libros"].pop(id_libro)
+                            print(f"Se eliminaron todas las unidades del libro con ID: {id_libro} ya que la cantidad a eliminar es igual o mayor a las existencias.")
+                        else:
+                            data["libros"][id_libro]["Cantidad"] -=cantidad_a_eliminar
+                            print(f"Cantidad actualizada. Quedan {"Cantidad"} unidades del libro con ID: {id_libro}")
+                    except ValueError:
+                        print("La cantidad a eliminar debe ser un numero entero")
+                        continue
+                guardar_datos_biblioteca(data)
+                time.sleep(2)
+                wait_for_keypress()
+                clear()
+                print("********************************************************")
+                return
+        except ValueError:
+            print("No se encontró un libro con el ID proporcionado.")
+
+def agregar_copias():
+    while True:
+        data = leer_datos_biblioteca()
+        print("********************************************************")
+        print("                    Pagina de agregar copias de libro")
+        print("********************************************************")
+        id_libro = input("Ingrese el ID del libro: ")
+
+        if id_libro not in data["libros"]:
+            print("No se encontró un libro con el ID proporcionado.")
+        else:
+            try:
+                cant_adicional = int(input("Ingrese la cantidad de copias para adicionar: "))
+                data["libros"][id_libro]["Cantidad"] += cant_adicional
+                cant_total = data["libros"][id_libro]["Cantidad"]
+                print(f"Se agregaron {cant_adicional} copias del libro con ID: {id_libro}.")
+                print(f"Cantidad total {cant_total}")
+                guardar_datos_biblioteca(data)
+            except ValueError:
+                print("La cantidad a agregar debe ser un numero entero")
+                continue
+        time.sleep(2)
+        wait_for_keypress()
+        clear()
+        print("********************************************************")
+        return
+
 
 # def mostrar_genero():
 
