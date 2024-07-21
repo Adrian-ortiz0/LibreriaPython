@@ -695,6 +695,7 @@ def main_cliente_biblioteca(persona):
                 devolver_libro(persona)
                 clear()
             elif opt==4:
+                mis_libros(persona)
                 clear()
             elif opt==5:
                 clear()
