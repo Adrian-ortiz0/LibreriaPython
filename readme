@@ -37,6 +37,7 @@ Adrian - 8:30 21/07/24
 
 Adrian - 2:00 21/07/24
 -> Se añadio la opción que permite que el usuario pueda ver sus libros prestados
+-> Se añadio la funcionalidad de poder ver a todos los usuarios que posean libros en prestamo, esta funcionalidad es solo para el administrador
 
 PENDIENTE.
 FALTA COMPLETAR FUNCIONALIDADES.

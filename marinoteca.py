@@ -640,7 +640,27 @@ def devolver_libro(persona):
         print(f"Error en los datos del libro o usuario: {e}")
     except Exception as e:
         print(f"Ocurrió un error inesperado: {e}")
+        
+def clientes_con_libros():
+    data = leer_datos_biblioteca()
+    usuarios = data['usuarios']['clientes']
     
+    usuarios_con_libros = {}
+    for id_usuario, info_usuario in usuarios.items():
+        if info_usuario['libros']:
+            usuarios_con_libros[id_usuario] = info_usuario
+    for id_usuario, info_usuario in usuarios_con_libros.items():
+        print(f"-ID: {id_usuario}")
+        print(f"-Nombres: {info_usuario['Nombres']}")
+        print(f"-Apellidos: {info_usuario['Apellidos']}")
+        print(f"-Dirección: {info_usuario['Direccion']}")
+        print(f"-Teléfono móvil: {info_usuario['Telefonos movil']}")
+        print(f"-Libros: {', '.join(info_usuario['libros'])}")
+        time.sleep(2)
+        wait_for_keypress()
+        clear()
+        print("***********************************************")
+        print()
 #---------------------------------------------------------
 #-------------------------CLIENTE
 

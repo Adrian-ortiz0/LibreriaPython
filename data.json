@@ -1,410 +1,406 @@
 {
-    "usuarios": {
-        "clientes": {
-            "2131231231": {
-                "Nombres": "qweqwe",
-                "Apellidos": "12312312",
-                "Direccion": "21312312312",
-                "Telefonos movil": 12312312312312,
-                "password": "543645657",
-                "libros": []
-            },
-            "23123": {
-                "Nombres": "erewrewr",
-                "Apellidos": "213123",
-                "Direccion": "213123",
-                "Telefonos movil": 12312312,
-                "password": "12312312",
-                "libros": []
-            },
-            "312312312312": {
-                "Nombres": "312312312",
-                "Apellidos": "4123123123",
-                "Direccion": "12312312212312",
-                "Telefonos movil": 12312312312312,
-                "password": "1231231231231",
-                "libros": []
-            },
-            "1002": {
-                "Nombres": "juancho",
-                "Apellidos": "asd",
-                "Direccion": "asd",
-                "Telefonos movil": 212,
-                "password": "125",
-                "libros": []
-            },
-            "1005327319": {
-                "Nombres": "adrian",
-                "Apellidos": "ortiz",
-                "Direccion": "cra 20",
-                "Telefonos movil": 3173109599,
-                "password": "123",
-                "libros": [
-                    "1984",
-                    "fvsf",
-                    "asdsf"
-                ]
-            }
-        },
-        "admins": {
-            "adminmarino": {
-                "password": "123"
-            }
-        }
+  "usuarios": {
+    "clientes": {
+      "2131231231": {
+        "Nombres": "qweqwe",
+        "Apellidos": "12312312",
+        "Direccion": "21312312312",
+        "Telefonos movil": 12312312312312,
+        "password": "543645657",
+        "libros": []
+      },
+      "23123": {
+        "Nombres": "erewrewr",
+        "Apellidos": "213123",
+        "Direccion": "213123",
+        "Telefonos movil": 12312312,
+        "password": "12312312",
+        "libros": []
+      },
+      "312312312312": {
+        "Nombres": "312312312",
+        "Apellidos": "4123123123",
+        "Direccion": "12312312212312",
+        "Telefonos movil": 12312312312312,
+        "password": "1231231231231",
+        "libros": []
+      },
+      "1002": {
+        "Nombres": "juancho",
+        "Apellidos": "asd",
+        "Direccion": "asd",
+        "Telefonos movil": 212,
+        "password": "125",
+        "libros": []
+      },
+      "1005327319": {
+        "Nombres": "adrian",
+        "Apellidos": "ortiz",
+        "Direccion": "cra 20",
+        "Telefonos movil": 3173109599,
+        "password": "123",
+        "libros": ["Un Mundo Feliz"]
+      }
     },
-    "libros": {
-        "7": {
-            "Titulo": "harry potter",
-            "Autor": "jk rowling",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1999-03-18",
-            "Cantidad": 1,
-            "Disponibilidad": true
-        },
-        "8": {
-            "Titulo": "duna",
-            "Autor": "Frank Herbert",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1965-08-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "9": {
-            "Titulo": "1984",
-            "Autor": "George Orwell",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1949-06-08",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "10": {
-            "Titulo": "Fahrenheit 451",
-            "Autor": "Ray Bradbury",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1953-10-19",
-            "Cantidad": 1,
-            "Disponibilidad": true
-        },
-        "11": {
-            "Titulo": "Cronicas Marcianas",
-            "Autor": "Ray Bradbury",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1950-09-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "12": {
-            "Titulo": "La Guerra de los Mundos",
-            "Autor": "HG Wells",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1898-08-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "13": {
-            "Titulo": "\u00bfSue\u00f1an los androides con ovejas el\u00e9ctricas?",
-            "Autor": "Philip K. Dick",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1968-01-01",
-            "Cantidad": 4,
-            "Disponibilidad": true
-        },
-        "14": {
-            "Titulo": "Un Mundo Feliz",
-            "Autor": "Aldous Huxley",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1932-01-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "15": {
-            "Titulo": "La Maquina del Tiempo",
-            "Autor": "HG Wells",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1895-01-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "16": {
-            "Titulo": "Matadero Cinco",
-            "Autor": "Kurt Vonnegut",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1969-03-31",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "17": {
-            "Titulo": "Solaris",
-            "Autor": "Stanislaw Lem",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1961-11-01",
-            "Cantidad": 4,
-            "Disponibilidad": true
-        },
-        "18": {
-            "Titulo": "El dia de los Trifidos",
-            "Autor": "John Wyndham",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1951-03-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "19": {
-            "Titulo": "La guia del autoestopista galactico",
-            "Autor": "Douglas Adams",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1951-03-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "20": {
-            "Titulo": "Neuromante",
-            "Autor": "William Gibson",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1984-07-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "21": {
-            "Titulo": "El cuento de la criada",
-            "Autor": "Margaret Atwood",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1985-04-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "22": {
-            "Titulo": "Cien A\u00f1os de Soledad",
-            "Autor": "Gabriel Garcia Marquez",
-            "Categoria": "ficcion",
-            "Fecha de publicacion": "1967-06-05",
-            "Cantidad": 4,
-            "Disponibilidad": true
-        },
-        "23": {
-            "Titulo": "Orgullo y Prejuicio",
-            "Autor": "Jane Austen",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1813-01-28",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "24": {
-            "Titulo": "El Amor en Tiempos de Colera",
-            "Autor": "Gabriel Garcia Marquez",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1985-03-01",
-            "Cantidad": 4,
-            "Disponibilidad": true
-        },
-        "25": {
-            "Titulo": "Cincuenta Sombras de Grey",
-            "Autor": "El James",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2011-05-25",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "26": {
-            "Titulo": "Un Paseo para Recordar",
-            "Autor": "Nicholas Sparks",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1999-10-01",
-            "Cantidad": 4,
-            "Disponibilidad": true
-        },
-        "27": {
-            "Titulo": "Asi es como la Pierdes",
-            "Autor": "Junot Diaz",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2012-09-11",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "28": {
-            "Titulo": "La Pasion Turca",
-            "Autor": "Antonio Gala",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1993-01-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "29": {
-            "Titulo": "Bajo la Misma Estrella",
-            "Autor": "John Green",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2012-01-10",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "30": {
-            "Titulo": "Yo Antes de Ti",
-            "Autor": "Jojo Moyes",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2012-01-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "31": {
-            "Titulo": "Cumbres Borrascosas",
-            "Autor": "Emily Bront\u00eb",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1847-12-01",
-            "Cantidad": 5,
-            "Disponibilidad": true
-        },
-        "32": {
-            "Titulo": "Jane Eyre",
-            "Autor": "Charlotte Bront\u00eb",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1847-10-16",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "33": {
-            "Titulo": "El Diario De Una Pasion",
-            "Autor": "Nicholas Sparks",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1996-10-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "34": {
-            "Titulo": "Llamame por tu Nombre",
-            "Autor": "Andr\u00e9 Aciman",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2007-01-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "35": {
-            "Titulo": "El Cuaderno de No\u00e9",
-            "Autor": "Nicholas Sparks",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "1996-10-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "36": {
-            "Titulo": "Amor y otras palabras",
-            "Autor": "Christina Lauren",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2018-04-10",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "37": {
-            "Titulo": "A Todos los Chicos de los que Me enamor\u00e9",
-            "Autor": "Jenny Han",
-            "Categoria": "Romance",
-            "Fecha de publicacion": "2014-04-15",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "38": {
-            "Titulo": "Moby Dick",
-            "Autor": "Herman Melville",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1851-10-18",
-            "Cantidad": 5,
-            "Disponibilidad": true
-        },
-        "39": {
-            "Titulo": "El gran Gatsby",
-            "Autor": "F.Scott Fitzgerald",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1925-04-10",
-            "Cantidad": 5,
-            "Disponibilidad": true
-        },
-        "40": {
-            "Titulo": "Los miserables",
-            "Autor": "Victor Hugo",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1862-04-03",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "41": {
-            "Titulo": "Crimen y castigo",
-            "Autor": "Oscar Wilde",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1866-01-01",
-            "Cantidad": 4,
-            "Disponibilidad": true
-        },
-        "42": {
-            "Titulo": "El retrato de Dorian Gray",
-            "Autor": "Oscar Wilde",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1890-07-01",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "43": {
-            "Titulo": "La Letra Escarlata",
-            "Autor": "Nathaniel Hawthorne",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1850-03-16",
-            "Cantidad": 3,
-            "Disponibilidad": true
-        },
-        "44": {
-            "Titulo": "El conde Montecristo",
-            "Autor": "Alejandro Dumas",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1844-01-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "45": {
-            "Titulo": "El Viejo y el Mar",
-            "Autor": "Ernest Hemingway",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1952-09-01",
-            "Cantidad": 5,
-            "Disponibilidad": true
-        },
-        "46": {
-            "Titulo": "La isla del Tesoro",
-            "Autor": "Robert Louis Stevenson",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1883-11-14",
-            "Cantidad": 5,
-            "Disponibilidad": true
-        },
-        "47": {
-            "Titulo": "El Jardin Secreto ",
-            "Autor": "Frances Hodsong Burnett",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1911-08-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "48": {
-            "Titulo": "Las Hijas de la Criada",
-            "Autor": "Laura Restrepo",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "2023-01-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "49": {
-            "Titulo": "El Hombre de la Rosa",
-            "Autor": "Umberto Eco",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1980-01-01",
-            "Cantidad": 2,
-            "Disponibilidad": true
-        },
-        "50": {
-            "Titulo": "El alquimista",
-            "Autor": "Paulo Coelho",
-            "Categoria": "clasicos",
-            "Fecha de publicacion": "1988-04-01",
-            "Cantidad": 5,
-            "Disponibilidad": true
-        }
+    "admins": {
+      "adminmarino": {
+        "password": "123"
+      }
+    }
+  },
+  "libros": {
+    "7": {
+      "Titulo": "harry potter",
+      "Autor": "jk rowling",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1999-03-18",
+      "Cantidad": 1,
+      "Disponibilidad": true
     },
-    "ultimo_id_libro": 8
+    "8": {
+      "Titulo": "duna",
+      "Autor": "Frank Herbert",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1965-08-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "9": {
+      "Titulo": "1984",
+      "Autor": "George Orwell",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1949-06-08",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "10": {
+      "Titulo": "Fahrenheit 451",
+      "Autor": "Ray Bradbury",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1953-10-19",
+      "Cantidad": 1,
+      "Disponibilidad": true
+    },
+    "11": {
+      "Titulo": "Cronicas Marcianas",
+      "Autor": "Ray Bradbury",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1950-09-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "12": {
+      "Titulo": "La Guerra de los Mundos",
+      "Autor": "HG Wells",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1898-08-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "13": {
+      "Titulo": "\u00bfSue\u00f1an los androides con ovejas el\u00e9ctricas?",
+      "Autor": "Philip K. Dick",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1968-01-01",
+      "Cantidad": 4,
+      "Disponibilidad": true
+    },
+    "14": {
+      "Titulo": "Un Mundo Feliz",
+      "Autor": "Aldous Huxley",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1932-01-01",
+      "Cantidad": 1,
+      "Disponibilidad": true
+    },
+    "15": {
+      "Titulo": "La Maquina del Tiempo",
+      "Autor": "HG Wells",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1895-01-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "16": {
+      "Titulo": "Matadero Cinco",
+      "Autor": "Kurt Vonnegut",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1969-03-31",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "17": {
+      "Titulo": "Solaris",
+      "Autor": "Stanislaw Lem",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1961-11-01",
+      "Cantidad": 4,
+      "Disponibilidad": true
+    },
+    "18": {
+      "Titulo": "El dia de los Trifidos",
+      "Autor": "John Wyndham",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1951-03-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "19": {
+      "Titulo": "La guia del autoestopista galactico",
+      "Autor": "Douglas Adams",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1951-03-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "20": {
+      "Titulo": "Neuromante",
+      "Autor": "William Gibson",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1984-07-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "21": {
+      "Titulo": "El cuento de la criada",
+      "Autor": "Margaret Atwood",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1985-04-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "22": {
+      "Titulo": "Cien A\u00f1os de Soledad",
+      "Autor": "Gabriel Garcia Marquez",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1967-06-05",
+      "Cantidad": 4,
+      "Disponibilidad": true
+    },
+    "23": {
+      "Titulo": "Orgullo y Prejuicio",
+      "Autor": "Jane Austen",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1813-01-28",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "24": {
+      "Titulo": "El Amor en Tiempos de Colera",
+      "Autor": "Gabriel Garcia Marquez",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1985-03-01",
+      "Cantidad": 4,
+      "Disponibilidad": true
+    },
+    "25": {
+      "Titulo": "Cincuenta Sombras de Grey",
+      "Autor": "El James",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2011-05-25",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "26": {
+      "Titulo": "Un Paseo para Recordar",
+      "Autor": "Nicholas Sparks",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1999-10-01",
+      "Cantidad": 4,
+      "Disponibilidad": true
+    },
+    "27": {
+      "Titulo": "Asi es como la Pierdes",
+      "Autor": "Junot Diaz",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2012-09-11",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "28": {
+      "Titulo": "La Pasion Turca",
+      "Autor": "Antonio Gala",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1993-01-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "29": {
+      "Titulo": "Bajo la Misma Estrella",
+      "Autor": "John Green",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2012-01-10",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "30": {
+      "Titulo": "Yo Antes de Ti",
+      "Autor": "Jojo Moyes",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2012-01-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "31": {
+      "Titulo": "Cumbres Borrascosas",
+      "Autor": "Emily Bront\u00eb",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1847-12-01",
+      "Cantidad": 5,
+      "Disponibilidad": true
+    },
+    "32": {
+      "Titulo": "Jane Eyre",
+      "Autor": "Charlotte Bront\u00eb",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1847-10-16",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "33": {
+      "Titulo": "El Diario De Una Pasion",
+      "Autor": "Nicholas Sparks",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1996-10-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "34": {
+      "Titulo": "Llamame por tu Nombre",
+      "Autor": "Andr\u00e9 Aciman",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2007-01-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "35": {
+      "Titulo": "El Cuaderno de No\u00e9",
+      "Autor": "Nicholas Sparks",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "1996-10-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "36": {
+      "Titulo": "Amor y otras palabras",
+      "Autor": "Christina Lauren",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2018-04-10",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "37": {
+      "Titulo": "A Todos los Chicos de los que Me enamor\u00e9",
+      "Autor": "Jenny Han",
+      "Categoria": "Romance",
+      "Fecha de publicacion": "2014-04-15",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "38": {
+      "Titulo": "Moby Dick",
+      "Autor": "Herman Melville",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1851-10-18",
+      "Cantidad": 5,
+      "Disponibilidad": true
+    },
+    "39": {
+      "Titulo": "El gran Gatsby",
+      "Autor": "F.Scott Fitzgerald",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1925-04-10",
+      "Cantidad": 5,
+      "Disponibilidad": true
+    },
+    "40": {
+      "Titulo": "Los miserables",
+      "Autor": "Victor Hugo",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1862-04-03",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "41": {
+      "Titulo": "Crimen y castigo",
+      "Autor": "Oscar Wilde",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1866-01-01",
+      "Cantidad": 4,
+      "Disponibilidad": true
+    },
+    "42": {
+      "Titulo": "El retrato de Dorian Gray",
+      "Autor": "Oscar Wilde",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1890-07-01",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "43": {
+      "Titulo": "La Letra Escarlata",
+      "Autor": "Nathaniel Hawthorne",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1850-03-16",
+      "Cantidad": 3,
+      "Disponibilidad": true
+    },
+    "44": {
+      "Titulo": "El conde Montecristo",
+      "Autor": "Alejandro Dumas",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1844-01-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "45": {
+      "Titulo": "El Viejo y el Mar",
+      "Autor": "Ernest Hemingway",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1952-09-01",
+      "Cantidad": 5,
+      "Disponibilidad": true
+    },
+    "46": {
+      "Titulo": "La isla del Tesoro",
+      "Autor": "Robert Louis Stevenson",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1883-11-14",
+      "Cantidad": 5,
+      "Disponibilidad": true
+    },
+    "47": {
+      "Titulo": "El Jardin Secreto ",
+      "Autor": "Frances Hodsong Burnett",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1911-08-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "48": {
+      "Titulo": "Las Hijas de la Criada",
+      "Autor": "Laura Restrepo",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "2023-01-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "49": {
+      "Titulo": "El Hombre de la Rosa",
+      "Autor": "Umberto Eco",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1980-01-01",
+      "Cantidad": 2,
+      "Disponibilidad": true
+    },
+    "50": {
+      "Titulo": "El alquimista",
+      "Autor": "Paulo Coelho",
+      "Categoria": "clasicos",
+      "Fecha de publicacion": "1988-04-01",
+      "Cantidad": 5,
+      "Disponibilidad": true
+    }
+  },
+  "ultimo_id_libro": 8
 }
