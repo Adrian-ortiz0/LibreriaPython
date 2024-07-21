@@ -163,7 +163,7 @@ def security_cliente():
                             print("\nCARGANDO SISTEMA...")
                             time.sleep(2)
                             clear()
-                            main_cliente_biblioteca()
+                            main_cliente_biblioteca(persona)
                             
                         else:
                             print("********************************************************")
@@ -556,12 +556,60 @@ def mostrar_disponibles():
     else:
         print(f"No se encontraron libros disponibles.")
         
-#def reservar_manualmente():
+def reservar_manualmente(persona):
+    
+    data = leer_datos_biblioteca()
+    libros = data["libros"]
+    usuario = data["usuarios"]["clientes"][persona]
+    print("Bienvenido al sistema de reserva de libros!")
+    libro_reserva = input("Ingrese el nombre del libro que desee reservar: ").strip()
+    
+    libro_encontrado = False
 
-    
-    
+    for libro in libros.values():
+            if libro["Titulo"].lower() == libro_reserva.lower():
+                libro_encontrado = True
+                break
         
+    if not libro_encontrado:
+            print("Ese libro no existe!")
+            time.sleep(2)
+            wait_for_keypress()
+            clear()
+            print("***********************************************")
+            return
         
+    for libro in libros.values():
+            try:
+                if libro["Titulo"].lower() == libro_reserva.lower() and libro["Disponibilidad"] == True and libro["Cantidad"] >= 1:
+                    if libro_reserva not in usuario["libros"]:
+                        libro["Cantidad"] -= 1
+                        usuario["libros"].append(libro["Titulo"])
+                        print("Libro añadido!")
+                        time.sleep(2)
+                        wait_for_keypress()
+                        clear()
+                        print("***********************************************")
+                    else:
+                        print("Ya reservaste este libro!")
+                        time.sleep(2)
+                        wait_for_keypress()
+                        clear()
+                        print("***********************************************")
+                    if libro["Cantidad"] == 0:
+                        libro["Disponibilidad"] = False
+                        print("El libro ya no esta disponible!")
+                        time.sleep(2)
+                        wait_for_keypress()
+                        clear()
+                        print("***********************************************")
+                    else:
+                        print("El libro esta disponible!")
+                    guardar_datos_biblioteca(data)
+            except KeyError as e:
+                print(f"Error en los datos del libro: {e}")
+            except Exception as e:
+                print(f"Ocurrió un error inesperado: {e}")
 #---------------------------------------------------------
 #-------------------------CLIENTE
 
@@ -576,10 +624,11 @@ def buscar_libros_cliente():
     elif busqueda == 4:
         mostrar_disponibles()
     else:
-        print("Chao")
+        print("Esa opción no existe!")
+        return
 
 
-def main_cliente_biblioteca():
+def main_cliente_biblioteca(persona):
     while True:
         print("************************************************************************")
         print("                          MARINOTECA - BIENVENIDO USUARIO")
@@ -593,9 +642,15 @@ def main_cliente_biblioteca():
         print("                       RESERVA")
         print("********************************************************")
         print("2. Reservar libro")
+        print("3. Devolver libro")
         
+        print("********************************************************")
+        print("                       PERFIL")
+        print("*******************************************************")
+        print("4. Mirar mis libros")
+            
         print("***********************************************")
-        print("3. REGRESAR --> Menu principal")
+        print("5. REGRESAR --> Menu principal")
         print("***********************************************\n")
         try:
             opt=int(input("ingrese su opcion: "))
@@ -604,9 +659,13 @@ def main_cliente_biblioteca():
                 buscar_libros_cliente()
             elif opt==2:
                 clear()
+                reservar_manualmente(persona)
             elif opt==3:
+                devolver_libros(persona)
                 clear()
             elif opt==4:
+                clear()
+            elif opt==5:
                 clear()
                 return
             
