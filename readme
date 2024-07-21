@@ -11,5 +11,13 @@ Erik - 13:00 19/07/24
 Adrian - 9:00 20/07/24
   -> Se crea la funcionalidad de eliminar usuario para el admin.
 
+Laura - 14:00 20/07/24
+  -> Se crea la funcionalidad de agregar libro
+  -> Se crea la funcionalidad de eliminar libro
+    ->Cantidad total o por unidades
+  -> Se añade funcionalidad agregar copias a un libro
+
+  ->Se modifica el menu para agregar la opcion Añadir copias de libro
+
 PENDIENTE.
 FALTA COMPLETAR FUNCIONALIDADES.
