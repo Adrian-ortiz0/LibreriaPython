@@ -42,7 +42,6 @@
                 "libros": [
                     "1984",
                     "fvsf",
-                    "harry potter piedra filosofal",
                     "asdsf"
                 ]
             }
@@ -83,8 +82,8 @@
             "Autor": "jk rowling",
             "Categoria": "ficcion",
             "Fecha de publicacion": "1999-03-18",
-            "Cantidad": 0,
-            "Disponibilidad": false
+            "Cantidad": 1,
+            "Disponibilidad": true
         },
         "8": {
             "Titulo": "1984",

@@ -220,11 +220,9 @@ def main_admin_biblioteca():
         print("********************************************************")
         print("9. mostrar libros disponibles")
         print("10. mostrar clientes con libros en uso")
-        print("11. Reservar libro manualmente")
-        print("12. Devolucion de libro")
         
         print("***********************************************")
-        print("13. REGRESAR --> Menu principal")
+        print("11. REGRESAR --> Menu principal")
         print("***********************************************\n")
         try:
             opt=int(input("ingrese su opcion: "))
@@ -259,12 +257,6 @@ def main_admin_biblioteca():
                 clear()
                 clientes_con_libros()
             elif opt==11:
-                clear()
-                reservar_manualmente()
-            elif opt==12:
-                clear()
-                devolver_libro()
-            elif opt==13:
                 clear()
                 return
             else:
@@ -610,6 +602,45 @@ def reservar_manualmente(persona):
                 print(f"Error en los datos del libro: {e}")
             except Exception as e:
                 print(f"Ocurrió un error inesperado: {e}")
+                
+def devolver_libro(persona):
+    try:
+        data = leer_datos_biblioteca()
+        libros = data["libros"]
+        usuario = data["usuarios"]["clientes"][persona]
+        print("Bienvenido al sistema de devolución de libros!")
+        print("********************************************************************")
+        print("Tus libros actuales: ")
+        for libro in usuario["libros"]:
+            print(f"- {libro}")
+        libro_devolucion = input("Ingrese el nombre del libro que desee devoler: ").strip()
+        if libro_devolucion not in [libro.lower() for libro in usuario["libros"]]:
+            print("Ese libro no está en tu lista de libros!")
+            time.sleep(2)
+            wait_for_keypress()
+            clear()
+            print("***********************************************")
+            return
+        else:
+            usuario["libros"].remove(libro_devolucion)
+
+            for libro in libros.values():
+                if libro["Titulo"].lower() == libro_devolucion.lower():
+                    libro["Cantidad"] += 1
+                    if libro["Cantidad"] > 0:
+                        libro["Disponibilidad"] = True
+                    break
+            guardar_datos_biblioteca(data)
+            print("Libro devuelto exitosamente!")
+            time.sleep(2)
+            wait_for_keypress()
+            clear()
+            print("***********************************************")
+    except KeyError as e:
+        print(f"Error en los datos del libro o usuario: {e}")
+    except Exception as e:
+        print(f"Ocurrió un error inesperado: {e}")
+    
 #---------------------------------------------------------
 #-------------------------CLIENTE
 
@@ -661,14 +692,13 @@ def main_cliente_biblioteca(persona):
                 clear()
                 reservar_manualmente(persona)
             elif opt==3:
-                devolver_libros(persona)
+                devolver_libro(persona)
                 clear()
             elif opt==4:
                 clear()
             elif opt==5:
                 clear()
-                return
-            
+                return         
             else:
                 print("La opcion que ingresaste no esta disponible.")
                 time.sleep(2)

@@ -27,7 +27,9 @@ Adrian - 22:00 20/07/24
 -> Se modificó el menu de busqueda utilizado por el cliente/usuario
 
 Adrian - 8:30 21/07/24
--> Se crea la funcionalidad de reservar libros para el usaurios
+-> Se crea la funcionalidad de reservar libros para el usaurios.
+-> Se crea la funcionalida de devolver los libros de cada usuario.
+-> Eliminé las funcionalidade de reserva y devolucion del menu administrador debido a que es algo que corresponde al usuario.
 
 PENDIENTE.
 FALTA COMPLETAR FUNCIONALIDADES.
