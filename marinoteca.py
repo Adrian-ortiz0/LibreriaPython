@@ -657,6 +657,20 @@ def buscar_libros_cliente():
     else:
         print("Esa opción no existe!")
         return
+    
+def mis_libros(persona):
+    data = leer_datos_biblioteca()
+    usuario = data["usuarios"]["clientes"][persona]
+    print(f"Bienvenido a tu perfil! {usuario["Nombres"]} {usuario["Apellidos"]}")
+    print("********************************************************************")
+    print("Tus libros actuales: ")
+    for libro in usuario["libros"]:
+        print(f"- {libro}")
+    time.sleep(2)
+    wait_for_keypress()
+    clear()
+    print("***********************************************")
+    return
 
 
 def main_cliente_biblioteca(persona):

@@ -27,16 +27,16 @@ Adrian - 22:00 20/07/24
 -> Se modificó el menu de busqueda utilizado por el cliente/usuario
 
 Felipe - 04:30am 21/07/24
-  -> Se Agregaron libros de diferentes categorias  al json desde el usuario admin desde el ID 7 hasta el 50 de la lista
+-> Se Agregaron libros de diferentes categorias al json desde el usuario admin desde el ID 7 hasta el 50 de la lista
+-commit aprobado a las 10:30 21/07/24
 
 Adrian - 8:30 21/07/24
 -> Se crea la funcionalidad de reservar libros para el usaurios.
 -> Se crea la funcionalida de devolver los libros de cada usuario.
 -> Eliminé las funcionalidade de reserva y devolucion del menu administrador debido a que es algo que corresponde al usuario.
 
-Felipe - 10:00 21/07/24
-
--> Actualización de la base de datos
+Adrian - 2:00 21/07/24
+-> Se añadio la opción que permite que el usuario pueda ver sus libros prestados
 
 PENDIENTE.
 FALTA COMPLETAR FUNCIONALIDADES.
