@@ -32,6 +32,14 @@
         "Telefonos movil": 212,
         "password": "125",
         "libros": []
+      },
+      "1005327319": {
+        "Nombres": "adrian",
+        "Apellidos": "ortiz",
+        "Direccion": "cra 20",
+        "Telefonos movil": 3173109599,
+        "password": "123",
+        "libros": []
       }
     },
     "admins": {
@@ -45,7 +53,7 @@
       "Titulo": "sdfs",
       "Autor": "sdfwef",
       "Categoria": "fwef",
-      "Telefonos movil": "1245-05-09",
+      "Fecha de publicacion": "1245-05-09",
       "Cantidad": 2,
       "Disponibilidad": true
     },
@@ -53,7 +61,7 @@
       "Titulo": "asdsf",
       "Autor": "sdfdsf",
       "Categoria": "sdfsdf",
-      "Telefonos movil": "1245-02-02",
+      "Fecha de publicacion": "1245-02-02",
       "Cantidad": 110,
       "Disponibilidad": true
     },
@@ -61,10 +69,26 @@
       "Titulo": "fvsf",
       "Autor": "rferf",
       "Categoria": "ergerg",
-      "Telefonos movil": "1245-02-02",
+      "Fecha de publicacion": "1245-02-02",
       "Cantidad": 27,
       "Disponibilidad": true
+    },
+    "7": {
+      "Titulo": "harry potter piedra filosofal",
+      "Autor": "jk rowling",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1999-03-18",
+      "Cantidad": 1,
+      "Disponibilidad": true
+    },
+    "8": {
+      "Titulo": "harry potter laberinto secreto",
+      "Autor": "jk rowling",
+      "Categoria": "ficcion",
+      "Fecha de publicacion": "1999-03-18",
+      "Cantidad": 1,
+      "Disponibilidad": false
     }
   },
-  "ultimo_id_libro": 5
+  "ultimo_id_libro": 7
 }

@@ -19,5 +19,13 @@ Laura - 14:00 20/07/24
 
   ->Se modifica el menu para agregar la opcion Añadir copias de libro
 
+  * Commit aprobado a las 21:00 del 20/07/24!
+
+Adrian - 22:00 20/07/24
+  -> Se crea la funcionalidad de buscar libros por autor
+  -> Se crea la funcionalidad de Buscar libros por titulo
+  -> Se crea la funcionalida de Buscar unicamente los libros disponibles
+    -> Se modificó el menu de busqueda utilizado por el cliente/usuario
+
 PENDIENTE.
 FALTA COMPLETAR FUNCIONALIDADES.

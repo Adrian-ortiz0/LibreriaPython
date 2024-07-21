@@ -405,7 +405,7 @@ def agregar_libro():
                     "Titulo": titulo,
                     "Autor": autor,
                     "Categoria": categoria,
-                    "Telefonos movil": fecha_publi,
+                    "Fecha de publicacion": fecha_publi,
                     "Cantidad":cantidad,
                     "Disponibilidad":True
                 }
@@ -489,13 +489,94 @@ def agregar_copias():
         print("********************************************************")
         return
 
-
+# def mostrar_todos():
 # def mostrar_genero():
 
+def mostrar_autor():
+    
+    data = leer_datos_biblioteca()
+    autor = input("Introduce el nombre del autor: ").strip()
+    libros = data["libros"]
+    libros_por_autor = []
+    
+    for libro in libros.values():
+            if libro["Autor"].lower() == autor.lower():
+                libros_por_autor.append(libro)
+                
+    if libros_por_autor:
+            print(f"Libros del autor {autor}:")
+            for libro in libros_por_autor:
+                print(f"- Título: {libro['Titulo']}, Categoría: {libro['Categoria']}, Cantidad: {libro['Cantidad']}, Disponibilidad: {libro['Disponibilidad']}")
+                time.sleep(2)
+                wait_for_keypress()
+                clear()
+                print("***********************************************")
+    else:
+        print(f"No se encontraron libros del autor {autor}.")
 
+def mostrar_por_titulo():
+    data = leer_datos_biblioteca()
+    titulo = input("Introduce el titulo del libro a buscar: ").strip()
+    libros = data["libros"]
+    libros_por_titulo = []
+    
+    for libro in libros.values():
+        if titulo.lower() in libro["Titulo"].lower():
+            libros_por_titulo.append(libro)
+    
+    if libros_por_titulo:
+        print(f"Libros con el titulo: {titulo}")
+        for libro in libros_por_titulo:
+            print(f"- Título: {libro['Titulo']}, Autor: {libro['Autor']}, Categoría: {libro['Categoria']}, Cantidad: {libro['Cantidad']}, Disponibilidad: {libro['Disponibilidad']}")
+            time.sleep(2)
+            wait_for_keypress()
+            clear()
+            print("***********************************************")
+    else:
+        print(f"No se encontraron libros con el titulo de: {titulo}.")
+        
+def mostrar_disponibles():
+    
+    data = leer_datos_biblioteca()
+    libros = data["libros"]
+    libros_por_disponibilidad = []
+    
+    for libro in libros.values():
+            if libro["Disponibilidad"] == True:
+                libros_por_disponibilidad.append(libro)
+                
+    if libros_por_disponibilidad:
+            print(f"Libros disponibles: ")
+            for libro in libros_por_disponibilidad:
+                print(f"- Título: {libro['Titulo']}, Categoría: {libro['Categoria']}, Disponibilidad: {libro['Disponibilidad']}")
+            time.sleep(2)
+            wait_for_keypress()
+            clear()
+            print("***********************************************")
+    else:
+        print(f"No se encontraron libros disponibles.")
+        
+#def reservar_manualmente():
+
+    
+    
+        
         
 #---------------------------------------------------------
 #-------------------------CLIENTE
+
+def buscar_libros_cliente():
+    busqueda = int(input("Deseas buscar libros por: (1. Titulo - 2. Autor - 3. Categoria - 4. Disponibilidad)?: "))
+    if busqueda == 1:
+        mostrar_por_titulo()
+    elif busqueda == 2:
+        mostrar_autor()
+    elif busqueda == 3:
+        print("por categoria")
+    elif busqueda == 4:
+        mostrar_disponibles()
+    else:
+        print("Chao")
 
 
 def main_cliente_biblioteca():
@@ -520,7 +601,7 @@ def main_cliente_biblioteca():
             opt=int(input("ingrese su opcion: "))
             if opt==1:
                 clear()
-                registrar_usuario()
+                buscar_libros_cliente()
             elif opt==2:
                 clear()
             elif opt==3:
