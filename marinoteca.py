@@ -504,7 +504,7 @@ def mostrar_todos():
     else:
         print(f"No se encontraron libros en la biblioteca.")
 
-def mostrar_categoria():
+def mostrar_genero():
     data = leer_datos_biblioteca()
     categoria =input("ingrese la categoria del libro:  ").strip()
     libros = data["libros"]
