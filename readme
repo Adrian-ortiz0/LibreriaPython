@@ -39,5 +39,12 @@ Adrian - 2:00 21/07/24
 -> Se añadio la opción que permite que el usuario pueda ver sus libros prestados
 -> Se añadio la funcionalidad de poder ver a todos los usuarios que posean libros en prestamo, esta funcionalidad es solo para el administrador
 
+Felipe - 7:30 21/07/24
+-> Se añadio la funcion de Mostrar todos los libros almacenados en el json mostrandolos en lista de mande que solo muestre el nombre para asi no saturar de informacion la consola
+
+Felipe - 11:30 21/07/24
+-> Se añadio la funcion de Mostrar todos los libros almacenados en el json  por categorias mostrandolos 1 a 1, muestre el nombre y la categoria del libro  para asi no saturar de informacion la consola
+
 PENDIENTE.
-FALTA COMPLETAR FUNCIONALIDADES.
+
+SE LOGRO TEAM ¡¡¡¡

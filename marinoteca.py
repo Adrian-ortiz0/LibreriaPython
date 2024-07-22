@@ -481,8 +481,50 @@ def agregar_copias():
         print("********************************************************")
         return
 
-# def mostrar_todos():
-# def mostrar_genero():
+def mostrar_todos():
+    data = leer_datos_biblioteca()
+    libros = data["libros"]
+
+    todos_los_libros = []
+
+    for libro in libros.values():
+        todos_los_libros.append(libro)
+
+    if todos_los_libros:
+        print(f"Todos los libros:")
+        for libro in todos_los_libros:
+            print(f"- Título: {libro['Titulo']}")
+        time.sleep(2)
+        print("***********************************************")
+        print("Estos son los libros de la MARINOTECA")
+        print("***********************************************")
+        wait_for_keypress()
+
+        clear()
+    else:
+        print(f"No se encontraron libros en la biblioteca.")
+
+def mostrar_categoria():
+    data = leer_datos_biblioteca()
+    categoria =input("ingrese la categoria del libro:  ").strip()
+    libros = data["libros"]
+    libros_por_categoria=[]
+    for libro in libros.values():
+        if libro["Categoria"].lower() == categoria.lower():
+            libros_por_categoria.append(libro)
+        
+    if libros_por_categoria:
+        print(f"libros por categorias {categoria}:")
+        for libro in libros_por_categoria:
+            print(f"-titulo: {libro['Titulo']}, Categoria : {libro['Categoria']}")
+            time.sleep(2)
+        print("***********************************************")
+        print("Estos son los libros de la MARINOTECA")
+        print("***********************************************")
+        wait_for_keypress()
+        clear()
+    else:
+        print(f"No se encontraron libros en la biblioteca.")
 
 def mostrar_autor():
     
@@ -661,10 +703,6 @@ def clientes_con_libros():
         clear()
         print("***********************************************")
         print()
-        
-def mostrar_todos():
-    data = leer_datos_biblioteca()
-    libros = data[]
 #---------------------------------------------------------
 #-------------------------CLIENTE
 
