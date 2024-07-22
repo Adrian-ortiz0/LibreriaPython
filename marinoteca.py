@@ -427,7 +427,7 @@ def eliminar_libro():
             id_libro = input("Ingrese el ID del libro que desea eliminar: ")
             if id_libro in data["libros"]:
                 libro = data["libros"][id_libro]
-                print(f"Libro encontrado: Titulo: {(libro["Titulo"])}, Autor: {(libro["Autor"])}, Cantidad: {(libro["Cantidad"])}")
+                print(f"Libro encontrado: Titulo: {(libro['Titulo'])}, Autor: {(libro['Autor'])}, Cantidad: {(libro['Cantidad'])}")
 
                 eliminar_todo = input("Desea eliminar todas las unidades de este libro? (1. Si - 2. No) :")
                 if eliminar_todo == "1":
@@ -441,7 +441,7 @@ def eliminar_libro():
                             print(f"Se eliminaron todas las unidades del libro con ID: {id_libro} ya que la cantidad a eliminar es igual o mayor a las existencias.")
                         else:
                             data["libros"][id_libro]["Cantidad"] -=cantidad_a_eliminar
-                            print(f"Cantidad actualizada. Quedan {"Cantidad"} unidades del libro con ID: {id_libro}")
+                            print(f"Cantidad actualizada. Quedan {'Cantidad'} unidades del libro con ID: {id_libro}")
                     except ValueError:
                         print("La cantidad a eliminar debe ser un numero entero")
                         continue
@@ -661,6 +661,10 @@ def clientes_con_libros():
         clear()
         print("***********************************************")
         print()
+        
+def mostrar_todos():
+    data = leer_datos_biblioteca()
+    libros = data[]
 #---------------------------------------------------------
 #-------------------------CLIENTE
 
@@ -681,7 +685,7 @@ def buscar_libros_cliente():
 def mis_libros(persona):
     data = leer_datos_biblioteca()
     usuario = data["usuarios"]["clientes"][persona]
-    print(f"Bienvenido a tu perfil! {usuario["Nombres"]} {usuario["Apellidos"]}")
+    print(f"Bienvenido a tu perfil! {usuario['Nombres']} {usuario['Apellidos']}")
     print("********************************************************************")
     print("Tus libros actuales: ")
     for libro in usuario["libros"]:
