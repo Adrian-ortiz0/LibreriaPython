@@ -124,6 +124,26 @@ Marinoteca es una aplicación de gestión de bibliotecas escrita en Python. Perm
   2. Mostrar libros por autores
   3. Mostrar libros por nombre
   4. Mostrar usuarios con libros
+ 
+## Capturas de Pantalla
+
+A continuación se muestran ejemplos de la interfaz de la consola para la aplicación Marinoteca. Estas capturas ilustran cómo se visualizan las distintas funcionalidades del programa.
+
+### Pantalla de Inicio
+
+![Pantalla de Inicio](/imgs/1.png)
+
+### Ingreso de usuario
+
+![Ingreso de usuario](/imgs/2.png)
+
+### Pagina de registro
+
+![Registro de usuarios](/imgs/3.png)
+
+### Menu de navegacion del administrador
+
+![Menu administrador](/imgs/4.png)
 
 ### Ejecución del Programa
 
