@@ -88,6 +88,43 @@ Marinoteca es una aplicación de gestión de bibliotecas escrita en Python. Perm
 
 ## Uso
 
+### Navegación en el Menú Principal
+
+- **Ingresar como Cliente**
+  Permite a los clientes registrados iniciar sesión y acceder a las funcionalidades de reserva de libros.
+
+- **Registrarse como Nuevo Cliente**
+  Permite a nuevos usuarios registrarse en el sistema.
+
+- **Ingresar como Administrador**
+  Permite a los administradores iniciar sesión y acceder a las funcionalidades de administración de la biblioteca.
+
+- **Salir**
+  Sale del programa.
+
+### Ejemplo de Uso
+
+- **Registrar un Nuevo Usuario**
+  1. Selecciona la opción "Incríbete para reservar" en el menú principal.
+  2. Ingresa los datos solicitados.
+  3. Los datos se guardarán en `data.json`.
+
+- **Agregar un Nuevo Libro**
+  1. Inicia sesión como administrador.
+  2. Selecciona la opción "Agregar libro".
+  3. Ingresa los datos del libro.
+
+- **Eliminar un Libro**
+  1. Inicia sesión como administrador.
+  2. Selecciona la opción "Eliminar libro".
+  3. Ingresa el ID del libro a eliminar.
+
+- ** Mostrar Libros **
+  1. Mostrar libros por categorias
+  2. Mostrar libros por autores
+  3. Mostrar libros por nombre
+  4. Mostrar usuarios con libros
+
 ### Ejecución del Programa
 
 Para iniciar el programa, ejecuta el script `marinoteca.py` en la consola:
