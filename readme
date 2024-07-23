@@ -30,7 +30,7 @@ Marinoteca es una aplicación de gestión de bibliotecas escrita en Python. Perm
 
 ## Requisitos
 
-- Python 3.x
+- Python
 - Módulos estándar de Python: `json`, `time`, `os`, `datetime`
 
 ## Funcionalidades
