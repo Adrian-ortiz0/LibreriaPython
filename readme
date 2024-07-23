@@ -1,50 +1,32 @@
-Erik - 13:00 19/07/24
-->Se crea el apartado de seguridad para admin y para clientes
-->Se crea el apartado de registro de clientes para que puedan ingresar al menu de cliente con su id.
-->Se crea el menu de cliente
-->Se crea el menu de administracion, solo con la funcionalidad de registrar usuario que se usa tambien
-en la pagina de seguridad cuando inicia el programa.
+Marinoteca
 
-    Se crean funciones para limpiar y mejorar el aspecto de mejora del sistema.
+Marinoteca es una biblioteca digital desarrollada en Python que ofrece un sistema de seguridad para acceder como administrador o usuario. Los usuarios pueden buscar libros por autor, categoría, fecha y reservarlos, mientras que los administradores tienen privilegios adicionales para gestionar la colección de libros.
+Características
+Usuarios
+- Registro e Inicio de Sesión: Los usuarios pueden registrarse y acceder a la plataforma.
+- Búsqueda de Libros: Permite buscar libros por autor, categoría y fecha de publicación.
+- Reservas: Los usuarios pueden reservar libros disponibles en la biblioteca.
 
-Adrian - 9:00 20/07/24
--> Se crea la funcionalidad de eliminar usuario para el admin.
+Administradores
 
-Laura - 14:00 20/07/24
--> Se crea la funcionalidad de agregar libro
--> Se crea la funcionalidad de eliminar libro
-->Cantidad total o por unidades
--> Se añade funcionalidad agregar copias a un libro
+- Gestión de Libros: Pueden añadir nuevos libros, eliminar existentes y ver todos los libros disponibles.
 
-->Se modifica el menu para agregar la opcion Añadir copias de libro
+- Búsqueda Avanzada: Capacidad de buscar libros con las mismas opciones que los usuarios.
 
-- Commit aprobado a las 21:00 del 20/07/24!
+- Gestión de Reservas: Los administradores pueden ver y gestionar las reservas realizadas por los usuarios.
 
-Adrian - 22:00 20/07/24
--> Se crea la funcionalidad de buscar libros por autor
--> Se crea la funcionalidad de Buscar libros por titulo
--> Se crea la funcionalida de Buscar unicamente los libros disponibles
--> Se modificó el menu de busqueda utilizado por el cliente/usuario
+Registro e Inicio de Sesión
 
-Felipe - 04:30am 21/07/24
--> Se Agregaron libros de diferentes categorias al json desde el usuario admin desde el ID 7 hasta el 50 de la lista
--commit aprobado a las 10:30 21/07/24
+- Registro: Los nuevos usuarios pueden registrarse proporcionando un nombre de usuario, correo electrónico y contraseña.
+- Inicio de Sesión: Los usuarios registrados pueden iniciar sesión con sus credenciales.
 
-Adrian - 8:30 21/07/24
--> Se crea la funcionalidad de reservar libros para el usaurios.
--> Se crea la funcionalida de devolver los libros de cada usuario.
--> Eliminé las funcionalidade de reserva y devolucion del menu administrador debido a que es algo que corresponde al usuario.
+Funcionalidades de Usuario
 
-Adrian - 2:00 21/07/24
--> Se añadio la opción que permite que el usuario pueda ver sus libros prestados
--> Se añadio la funcionalidad de poder ver a todos los usuarios que posean libros en prestamo, esta funcionalidad es solo para el administrador
+- Buscar Libros: Usa la barra de búsqueda para encontrar libros por autor, categoría o fecha.
+- Reservar Libros: Selecciona un libro disponible y resérvalo.
 
-Felipe - 7:30 21/07/24
--> Se añadio la funcion de Mostrar todos los libros almacenados en el json mostrandolos en lista de mande que solo muestre el nombre para asi no saturar de informacion la consola
+Funcionalidades de Administrador
 
-Felipe - 11:30 21/07/24
--> Se añadio la funcion de Mostrar todos los libros almacenados en el json  por categorias mostrandolos 1 a 1, muestre el nombre y la categoria del libro  para asi no saturar de informacion la consola
-
-PENDIENTE.
-
-SE LOGRO TEAM ¡¡¡¡
+- Añadir Libros: Accede al panel de administración para añadir nuevos libros.
+- Eliminar Libros: Selecciona libros de la lista y elimínalos.
+- Gestión de Reservas: Revisa y gestiona las reservas realizadas por los usuarios.

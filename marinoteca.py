@@ -21,9 +21,9 @@ def leer_datos_biblioteca():
                         "password":"JuanPapitoElMejor"
                     }
                 }
-                       },
+                    },
             "libros":{
-                       }
+                    }
         }
 
 def guardar_datos_biblioteca(data):
@@ -212,7 +212,7 @@ def main_admin_biblioteca():
         print("4. Eliminar libro")
         print("5. Agregar copias")
         print("6. Mostrar todos los libros")
-        print("7. Mostrar libros por genero")
+        print("7. Mostrar libros por categoria")
         print("8. Mostar libros por autor")
         
         print("********************************************************")
@@ -246,7 +246,7 @@ def main_admin_biblioteca():
                 mostrar_todos()
             elif opt==7:
                 clear()
-                mostrar_genero()
+                mostrar_categoria()
             elif opt==8:
                 clear()
                 mostrar_autor()
@@ -504,7 +504,7 @@ def mostrar_todos():
     else:
         print(f"No se encontraron libros en la biblioteca.")
 
-def mostrar_genero():
+def mostrar_categoria():
     data = leer_datos_biblioteca()
     categoria =input("ingrese la categoria del libro:  ").strip()
     libros = data["libros"]
@@ -514,7 +514,7 @@ def mostrar_genero():
             libros_por_categoria.append(libro)
         
     if libros_por_categoria:
-        print(f"libros por categorias {categoria}:")
+        print(f"libros por categorias {categoria}:") 
         for libro in libros_por_categoria:
             print(f"-titulo: {libro['Titulo']}, Categoria : {libro['Categoria']}")
             time.sleep(2)
@@ -525,7 +525,7 @@ def mostrar_genero():
         clear()
     else:
         print(f"No se encontraron libros en la biblioteca.")
-
+        
 def mostrar_autor():
     
     data = leer_datos_biblioteca()
@@ -698,11 +698,12 @@ def clientes_con_libros():
         print(f"-Dirección: {info_usuario['Direccion']}")
         print(f"-Teléfono móvil: {info_usuario['Telefonos movil']}")
         print(f"-Libros: {', '.join(info_usuario['libros'])}")
-        time.sleep(2)
-        wait_for_keypress()
-        clear()
         print("***********************************************")
-        print()
+    time.sleep(2)
+    wait_for_keypress()
+    clear()
+    print("***********************************************")
+    print()
 #---------------------------------------------------------
 #-------------------------CLIENTE
 
@@ -714,6 +715,7 @@ def buscar_libros_cliente():
         mostrar_autor()
     elif busqueda == 3:
         print("por categoria")
+        mostrar_categoria()
     elif busqueda == 4:
         mostrar_disponibles()
     else:
