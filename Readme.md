@@ -1,4 +1,4 @@
-# Marinoteca
+# Marinotec
 
 Marinoteca es una aplicación de gestión de bibliotecas escrita en Python. Permite registrar y administrar usuarios y libros, así como realizar reservas. Este README proporciona una descripción general de las funcionalidades y cómo usar la aplicación.
 
