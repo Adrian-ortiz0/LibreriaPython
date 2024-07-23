@@ -88,7 +88,13 @@ Marinoteca es una aplicación de gestión de bibliotecas escrita en Python. Perm
 
 ## Uso
 
-### Ejecución del Program
+### Ejecución del Programa
 
 Para iniciar el programa, ejecuta el script `marinoteca.py` en la consola:
+
+## Notas
+
+- Asegúrate de que el archivo data.json esté en el mismo directorio que marinoteca.py. Si no existe, el programa lo creará automáticamente al iniciar. 
+
+- La aplicación utiliza la biblioteca estándar de Python, por lo que no es necesario instalar dependencias adicionales.
 
